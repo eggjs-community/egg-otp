@@ -20,6 +20,8 @@
 [download-image]: https://img.shields.io/npm/dm/egg-otp.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-otp
 
+基于hotp和totp的 one time password 支持插件
+
 ## 开启插件
 
 ```js

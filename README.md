@@ -8,6 +8,8 @@
 [download-image]: https://img.shields.io/npm/dm/egg-otp.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-otp
 
+One time password plugin for eggjs.
+
 ## Install
 
 ```bash
