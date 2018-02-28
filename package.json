@@ -1,6 +1,6 @@
 {
   "name": "egg-otp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The one time password plugin on eggjs.",
   "eggPlugin": {
     "name": "otp"
@@ -50,10 +50,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs-community/egg-opt.git"
+    "url": "git+https://github.com/eggjs-community/egg-otp.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs-community/egg-opt/issues"
+    "url": "https://github.com/eggjs-community/egg-otp/issues"
   },
   "homepage": "https://github.com/eggjs/egg-otp#readme",
   "author": "duncup",

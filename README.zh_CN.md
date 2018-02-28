@@ -21,7 +21,13 @@ exports.otp = {
   enable: true,
   package: 'egg-otp',
 };
+// {app_root}/controller/home.js
+const key = ctx.otp.generateOtpKey();
+const token = ctx.otp.hotp.gen(key, {counter: 0});
+ctx.otp.hotp.verify(token, key, {counter: 0, window: 10});
 ```
+可以查看 [lib/hotp.js](lib/hotp.js) 与 [lib/totp.js](lib/totp.js) 获得更多的函数说明。
+
 
 ## 使用场景
 
@@ -32,10 +38,6 @@ exports.otp = {
 ## 详细配置
 
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
-
-## 提问交流
-
-请到 [egg issues](https://github.com/eggjs/egg/issues) 异步交流。
 
 ## License
 

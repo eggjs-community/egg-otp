@@ -27,15 +27,16 @@ exports.otp = {
   enable: true,
   package: 'egg-otp',
 };
+// {app_root}/controller/home.js
+const key = ctx.otp.generateOtpKey();
+const token = ctx.otp.hotp.gen(key, {counter: 0});
+ctx.otp.hotp.verify(token, key, {counter: 0, window: 10});
 ```
+you can see [lib/hotp.js](lib/hotp.js) AND [lib/totp.js](lib/totp.js) for more option.
 
 ## Configuration
 
 see [config/config.default.js](config/config.default.js) for more detail.
-
-## Questions & Suggestions
-
-Please open an issue [here](https://github.com/eggjs/egg/issues).
 
 ## License
 
