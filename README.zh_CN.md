@@ -33,10 +33,6 @@ exports.otp = {
 
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
 
-## 提问交流
-
-请到 [egg issues](https://github.com/eggjs/egg/issues) 异步交流。
-
 ## License
 
 [MIT](LICENSE)
