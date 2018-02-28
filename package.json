@@ -8,7 +8,11 @@
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "one time password",
+    "otp",
+    "hotp",
+    "totp"
   ],
   "dependencies": {
     "thirty-two": "^1.0.2"
@@ -46,10 +50,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-otp.git"
+    "url": "git+https://github.com/eggjs-community/egg-opt.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/eggjs-community/egg-opt/issues"
   },
   "homepage": "https://github.com/eggjs/egg-otp#readme",
   "author": "duncup",
