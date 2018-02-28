@@ -6,8 +6,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-otp.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-otp
-[travis-image]: https://img.shields.io/travis/eggjs-community/egg-opt.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs-community/egg-opt
+[travis-image]: https://img.shields.io/travis/eggjs-community/egg-otp.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs-community/egg-otp
 [download-image]: https://img.shields.io/npm/dm/egg-otp.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-otp
 
