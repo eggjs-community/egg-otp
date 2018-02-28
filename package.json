@@ -1,6 +1,6 @@
 {
   "name": "egg-otp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The one time password plugin on eggjs.",
   "eggPlugin": {
     "name": "otp"
