@@ -54,7 +54,7 @@ describe('test/otp.test.js', () => {
 
   it('generateTotpUri should return a url string.', () => {
     const ctx = app.mockContext();
-    assert.ok(typeof ctx.otp.generateTotpUri('JQSKNRRZ5VSU7EAZCJNVI7ECV4TS2N7X', 'test', 'local', 'SHA1', 6, 30) === 'string');
+    assert.ok(typeof ctx.otp.generateTotpUri({ secret: 'JQSKNRRZ5VSU7EAZCJNVI7ECV4TS2N7X', accountName: 'test', issuer: 'local', algo: 'SHA1', digits: 6, period: 30 }) === 'string');
   });
 
   it('generateOtpKey should return a bin string with object.', () => {

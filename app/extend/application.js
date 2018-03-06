@@ -21,7 +21,7 @@ module.exports = {
     generateOtpKey() {
       return crypto.randomBytes(20);
     },
-    generateTotpUri(secret, accountName, issuer, algo, digits, period) {
+    generateTotpUri({ secret, accountName, issuer, algo, digits, period }) {
       // Full OTPAUTH URI spec as explained at
       // https://github.com/google/google-authenticator/wiki/Key-Uri-Format
       return 'otpauth://totp/'
