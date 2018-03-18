@@ -16,16 +16,17 @@ const encode = function(bin) {
 
 // eslint-disable-next-line no-unused-vars
 function otp(config) {
+  this.config = config;
   return {
     get hotp() {
       if (!this[HOTP]) {
-        this[HOTP] = hotp;
+        this[HOTP] = new hotp(config);
       }
       return this[HOTP];
     },
     get totp() {
       if (!this[TOTP]) {
-        this[TOTP] = totp;
+        this[TOTP] = new totp(config);
       }
       return this[TOTP];
     },
@@ -39,8 +40,8 @@ function otp(config) {
         + encodeURI(issuer || '') + ':' + encodeURI(accountName || '')
         + '?secret=' + encode(secret)
         + '&issuer=' + encodeURIComponent(issuer || '')
-        + '&algorithm=' + (algo || 'SHA1')
-        + '&digits=' + (digits || 6)
+        + '&algorithm=' + (algo || this.config.algo || 'SHA1')
+        + '&digits=' + (digits || this.config.digits || 6)
         + '&period=' + (period || 30)
       ;
     },
@@ -50,7 +51,7 @@ function otp(config) {
 module.exports = {
   get otp() {
     if (!this[OTP]) {
-      this[OTP] = new otp();
+      this[OTP] = new otp(this.config.otp);
     }
     return this[OTP];
   },
