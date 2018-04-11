@@ -3,6 +3,7 @@
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![npm download][download-image]][download-url]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Feggjs-community%2Fegg-otp.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Feggjs-community%2Fegg-otp?ref=badge_shield)
 
 [npm-image]: https://img.shields.io/npm/v/egg-otp.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-otp
@@ -41,3 +42,6 @@ see [config/config.default.js](config/config.default.js) for more detail.
 ## License
 
 [MIT](LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Feggjs-community%2Fegg-otp.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Feggjs-community%2Fegg-otp?ref=badge_large)
