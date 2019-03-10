@@ -1,7 +1,15 @@
 
+1.4.2 / 2019-03-10
+==================
+
+  * chore: CI add node 11
+  * chore: CI add node 10 (#11)
+  * chore: CI add node 10. (#10)
+
 1.3.2 / 2018-04-25
 ==================
 
+  * Release 1.3.2
   *  refactor: Refactor get config logic. (#9)
   * chore: add git ignore.
 
